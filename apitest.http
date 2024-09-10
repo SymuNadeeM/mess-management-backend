@@ -1,0 +1,203 @@
+// get member all
+###
+GET http://localhost:5000/api/members
+
+// single member create
+###
+POST http://localhost:5000/api/members
+Content-Type: application/json
+
+{
+  "name": "Nure Alam",
+  "email": "nur@gmail.com",
+  "phone": "05345345345",
+  "password": "123456",
+  "joiningDate": "2023-02-20"
+}
+
+// single member get by id
+###
+GET http://localhost:5000/api/members/641bf89d4a9f4ae7453684f2
+
+// single member update
+###
+PUT http://localhost:5000/api/members/641bf89d4a9f4ae7453684f2
+Content-Type: application/json
+
+{
+  "name": "Nur",
+  "email": "nurealam@gmail.com"
+}
+
+// single member delete
+###
+DELETE http://localhost:5000/api/members/641bf89d4a9f4ae7453684f2
+
+
+// Bazar Lists all
+###
+GET http://localhost:5000/api/bazarLists
+
+// bazar list single create
+###
+POST http://localhost:5000/api/bazarLists
+Content-Type: application/json
+
+{
+  "member": "645e0c3a87c27db879d7fa60",
+  "itemName": "items",
+  "itemQuantity": "2",
+  "unit": "kg",
+  "itemAmount": "1000"
+}
+
+// bazar list single get
+###
+GET http://localhost:5000/api/bazarLists/645e1277022e0ee084fbc736
+
+// bazar list single updated
+###
+PUT http://localhost:5000/api/bazarLists/641dabb44060308d7bc98d6e
+Content-Type: application/json
+
+{
+  "itemName": "food update",
+  "unit": "kg",
+  "itemQuantity": "1.5",
+  "itemAmount": "250"
+}
+
+// bazar list single delete
+###
+DELETE http://localhost:5000/api/bazarLists/645e111caf5f367dc689756f
+
+
+// Bazar Schedules get all
+###
+GET http://localhost:5000/api/bazarSchedules
+
+// Bazar Schedules single create
+### 
+POST http://localhost:5000/api/bazarSchedules
+Content-Type: application/json
+
+{
+  "member": "645e0c3a87c27db879d7fa60",
+  "countOfBazar": "03",
+  "dayName": "satarday"
+}
+
+// Bazar Schedules single get
+### 
+GET http://localhost:5000/api/bazarSchedules/641dd622468d9601423fd831
+
+// Bazar Schedules single updated
+### 
+PUT http://localhost:5000/api/bazarSchedules/641dd622468d9601423fd831
+Content-Type: application/json
+
+{
+  "countOfBazar": "02",
+  "dayName": "friday"
+}
+
+// Bazar Schedules single delete
+### 
+DELETE http://localhost:5000/api/bazarSchedules/641dd654468d9601423fd837
+
+// Daily Meal Counts get all
+###
+GET http://localhost:5000/api/dailyMealCounts
+
+// Daily Meal Counts single create
+### 
+POST http://localhost:5000/api/dailyMealCounts
+Content-Type: application/json
+
+{
+  "member": "645e0c3a87c27db879d7fa60",
+  "mealCount": "02"
+}
+
+// Daily Meal Counts single get
+### 
+GET http://localhost:5000/api/dailyMealCounts/641dd71c468d9601423fd83f
+
+// Daily Meal Counts single update
+### 
+PUT http://localhost:5000/api/dailyMealCounts/641dd71c468d9601423fd83f
+Content-Type: application/json
+
+{
+  "member": "645e0c3a87c27db879d7fa60",
+  "mealCount": "03"
+}
+
+// Daily Meal Counts single delete
+### 
+DELETE http://localhost:5000/api/dailyMealCounts/641dd71c468d9601423fd83f
+
+// Others Costs get all
+###
+GET http://localhost:5000/api/othersCosts
+
+// Others Costs single create
+### 
+POST http://localhost:5000/api/othersCosts
+Content-Type: application/json
+
+{
+  "member" : "645e0c3a87c27db879d7fa60",
+  "costName" : "Net bill",
+  "costPrice" : "100"
+}
+
+// Others Costs single get
+### 
+GET http://localhost:5000/api/othersCosts/641dd9a8f19850521079c33e
+
+// Others Costs single update
+### 
+PUT http://localhost:5000/api/othersCosts/641dd9a8f19850521079c33e
+Content-Type: application/json
+
+{
+  "member" : "645e0c3a87c27db879d7fa60",
+  "costName" : "buya bill",
+  "costPrice" : "150"
+}
+
+// Others Costs single delete
+### 
+DELETE http://localhost:5000/api/othersCosts/641ddb55f19850521079c344
+
+// Paid Amounts get all
+###
+GET http://localhost:5000/api/paidAmounts
+
+// Paid Amounts single create
+### 
+POST http://localhost:5000/api/paidAmounts
+Content-Type: application/json
+
+{
+  "member": "645e0c3a87c27db879d7fa60",
+  "amount": "1000"
+}
+
+// Paid Amounts single get
+### 
+GET http://localhost:5000/api/paidAmounts/641ddc7ef19850521079c34b
+
+// Paid Amounts single update
+### 
+PUT http://localhost:5000/api/paidAmounts/641ddc7ef19850521079c34b
+Content-Type: application/json
+
+{
+  "amount": "1500"
+}
+
+// Paid Amounts single delete
+### 
+DELETE http://localhost:5000/api/paidAmounts/641ddc96f19850521079c351
